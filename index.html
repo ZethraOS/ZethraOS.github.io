@@ -1159,7 +1159,7 @@
       <a href="https://zethraos.com">zethraos.com</a>
     </div>
     <div class="footer-copy">
-      © 2025 ZethraOS · Built on Linux 6.x · Apache 2.0 · Made with <span>♥</span> for the open source community
+      © 2026<span id="current-year"></span> ZethraOS · Built on Linux 6.x · Apache 2.0 · Made with <span>♥</span> for the open source community
     </div>
   </div>
 </footer>
@@ -1278,6 +1278,10 @@
     }
     draw();
   })();
+
+  const founded = 2026;
+  const current = new Date().getFullYear();
+  document.getElementById('current-year').textContent = current > founded ? `–${current}` : '';
 </script>
 </body>
 </html>
