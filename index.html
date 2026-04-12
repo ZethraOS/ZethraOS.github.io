@@ -1,21 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- ─── PRIMARY SEO ──────────────────────────────────────────── -->
+<title>ZethraOS — AI-Native Self-Healing Mobile OS</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZethraOS — The AI-Native Self-Healing OS</title>
-  <meta name="description" content="Beyond Android: An AI-native, privacy-first mobile OS built on Linux. ZethraOS redefines mobile computing with autonomous self-healing, Rust-first memory safety, and privacy by design." />
-  <meta name="theme-color" content="#020c1b" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="ZethraOS — The AI-Native Self-Healing OS" />
-  <meta property="og:description" content="Beyond Android: An AI-native, privacy-first mobile OS built on Linux." />
-  <meta property="og:image" content="zethraos_cover.jpeg" />
+  <meta name="description" content="Beyond Android. A Rust-first, privacy-centric mobile OS built on Linux — powered by ZethraAI, the world's first autonomous self-healing engine for mobile." />
+  <meta name="keywords" content="ZethraOS, AI mobile OS, self-healing OS, Linux mobile, Rust OS, privacy OS, Android alternative, ZethraAI" />
+  <meta name="author" content="ZethraOS" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zethraos.com" />
+
+  <!-- ─── OPEN GRAPH (WhatsApp, LinkedIn, Facebook, iMessage) ──── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ZethraOS" />
   <meta property="og:url" content="https://zethraos.com" />
-  <!-- Fonts -->
+  <meta property="og:title" content="ZethraOS — AI-Native Self-Healing Mobile OS" />
+  <meta property="og:description" content="Beyond Android. A Rust-first, privacy-centric mobile OS built on Linux — powered by ZethraAI, the world's first autonomous self-healing engine for mobile." />
+  <meta property="og:image" content="https://zethraos.com/zethraos_cover.jpeg" />
+  <meta property="og:image:secure_url" content="https://zethraos.com/zethraos_cover.jpeg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ZethraOS — The AI-Native Self-Healing Mobile OS" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ─── TWITTER / X CARD ──────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ZethraOS" />
+  <meta name="twitter:creator" content="@ZethraOS" />
+  <meta name="twitter:url" content="https://zethraos.com" />
+  <meta name="twitter:title" content="ZethraOS — The AI-Native Self-Healing Mobile OS" />
+  <meta name="twitter:description" content="Beyond Android. Rust-first, privacy-centric, autonomous. Powered by ZethraAI — the world's first self-healing engine for mobile." />
+  <meta name="twitter:image" content="https://zethraos.com/zethraos_cover.jpeg" />
+  <meta name="twitter:image:alt" content="ZethraOS — AI-Native Self-Healing Mobile OS" />
+
+  <!-- ─── iOS / APPLE ────────────────────────────────────────────── -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ZethraOS" />
+  <link rel="apple-touch-icon" href="ZethraOS_logo.png" />
+
+  <!-- ─── ANDROID / CHROME ──────────────────────────────────────── -->
+  <meta name="theme-color" content="#020c1b" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="ZethraOS" />
+
+  <!-- ─── WINDOWS / MICROSOFT ───────────────────────────────────── -->
+  <meta name="msapplication-TileColor" content="#020c1b" />
+  <meta name="msapplication-TileImage" content="ZethraOS_logo.png" />
+  <meta name="msapplication-config" content="none" />
+
+  <!-- ─── IFRAME / EMBED CONTROL ───────────────────────────────── -->
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self'" />
+
+  <!-- ─── SCHEMA.ORG STRUCTURED DATA (Google rich results) ─────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ZethraOS",
+    "url": "https://zethraos.com",
+    "logo": "https://zethraos.com/ZethraOS_logo.png",
+    "image": "https://zethraos.com/zethraos_cover.jpeg",
+    "description": "Beyond Android. A Rust-first, privacy-centric mobile OS built on Linux powered by ZethraAI — the world's first autonomous self-healing engine for mobile.",
+    "applicationCategory": "OperatingSystem",
+    "operatingSystem": "Linux",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "sameAs": [
+      "https://github.com/ZethraOS",
+      "https://www.linkedin.com/company/zethraos/",
+      "https://www.instagram.com/ZethraOS/"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "ZethraOS",
+      "url": "https://zethraos.com"
+    }
+  }
+  </script>
+
+  <!-- ─── FONTS ──────────────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
-
   <style>
     /* ─── TOKENS ─────────────────────────────────────────────── */
     :root {
