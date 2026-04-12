@@ -1222,7 +1222,7 @@
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   /* --- Particle canvas --- */
-  (function initParticles() {
+  window.addEventListener('load', function initParticles() {
     const canvas = document.getElementById('particle-canvas');
     const ctx    = canvas.getContext('2d');
     let W, H, particles = [];
@@ -1230,8 +1230,9 @@
     const MAX_DIST = 130;
 
     function resize() {
-      W = canvas.width  = canvas.offsetWidth;
-      H = canvas.height = canvas.offsetHeight;
+      const hero = document.getElementById('hero');
+      W = canvas.width  = hero.offsetWidth;
+      H = canvas.height = hero.offsetHeight;
     }
     window.addEventListener('resize', resize);
     resize();
@@ -1277,7 +1278,7 @@
       requestAnimationFrame(draw);
     }
     draw();
-  })();
+  });
 
   const founded = 2026;
   const current = new Date().getFullYear();
